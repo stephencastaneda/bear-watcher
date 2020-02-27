@@ -9,7 +9,45 @@
 </head>
 <body>
   
-<div id="bear-card"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bear Tracker</a>
+     </button>
+    </nav>   
+
+
+<!-- <div id="bear-form"></div> -->
+<div class="col-10 offset-1">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fas fa-plus-circle"></i> Add Bear
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <form class="row" id= "new-bear-form">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="bear-name">Name</label>
+                  <input type="text" class="form-control" id="bear-name" aria-describedby="nameHelp" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                  <label for="bear-image">Image</label>
+                  <input type="text" class="form-control" id="bear-image" aria-describedby="ageHelp" placeholder="Enter picture">
+                </div>
+            <button type="submit" id="submit-new-bear" class="btn btn-primary">Submit</button>
+          </form>
+</div>
+</div>
+</div>
+</div>
+
+    <div id="bear-card"></div>
+
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
